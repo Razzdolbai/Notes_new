@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    tools::context = ".add_note">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.95">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/etNewNote"
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+                android:layout_weight="0.95"
+                android:ems="10"
+                android:hint="@string/hint_add_text"
+                android:inputType="textMultiLine" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/bSave"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="0.04"
+                android:text="@string/add_note_save_btn" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
